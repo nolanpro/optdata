@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150922041051) do
   enable_extension "plpgsql"
 
   create_table "chains", force: :cascade do |t|
-    t.integer  "symbol"
+    t.string   "symbol"
     t.text     "data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
