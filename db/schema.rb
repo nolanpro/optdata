@@ -11,9 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150922041051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "chains", force: :cascade do |t|
+    t.integer  "symbol"
+    t.text     "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "chains", ["symbol"], name: "index_chains_on_symbol", using: :btree
 
 end

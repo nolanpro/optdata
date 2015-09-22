@@ -1,0 +1,7 @@
+SYMBOLS = %w(
+  NYSE:MSI
+  NYSE:YELP
+  NYSE:BA
+  NYSE:P
+  NASDAQ:YHOO
+)
